@@ -5,11 +5,11 @@ import java.util.Collections;
 public class QuickSort {
 
     public static void main(String[] args) {
-        Integer[] input = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        Integer[] input = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
         System.out.println(Arrays.toString(input));
         sort(input);
         System.out.println(Arrays.toString(input));
- 
+
     }
 
     public static void sort(Comparable[] a) {
@@ -21,8 +21,8 @@ public class QuickSort {
         if (hi <= lo)
             return;
         int j = partition(a, lo, hi);
-        sort(a, lo, j-1);
-        sort(a, j+1, hi);
+        sort(a, lo, j - 1);
+        sort(a, j + 1, hi);
 
     }
 
